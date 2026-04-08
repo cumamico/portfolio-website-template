@@ -105,7 +105,7 @@ a:hover{
     text-align: center; /* 중앙 정렬을 원할 경우 */
     display: block;
     margin-bottom: 70px; /* 아래 문구와의 간격 */
-    margin-top: 200px;
+    margin-top: 130px;
     
     /* 6. 마지막 글자 뒤에도 간격이 생겨서 삐져나오는 걸 방지 */
     padding-left: 1.5em; 
