@@ -1,0 +1,505 @@
+body{
+    background-color: #EFEDE8;
+}
+.frame{
+    margin: 30px auto;
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+}
+#frame2{
+    margin: 30px auto;
+    width: 90%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+}
+#home{
+    
+}
+.navigator{
+    display: flex;
+    flex-direction: row;/*기본 로우지만 명확하게*/
+    justify-content: space-between;
+    background-color: gray;
+    
+}
+
+ul{
+    margin: 0px;
+}
+li{
+    display: inline;
+    margin: 0px;
+    margin-right: 15px;
+}
+.nav-menu{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.navigator a:hover{
+    color: white;
+    transition: 0.3s;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+}
+.mid{
+    font-family: 'Noto Sans KR' sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+}
+.sample1{
+    background-color: gray;
+}
+.sample1:hover{
+    background-color: transparent;
+    color: white;
+    transition: none;
+    -webkit-text-stroke: 1px black;
+}
+.sample2{
+    background-color: gray;
+}
+.sample2:hover{
+    background-color: transparent;
+    color: white;
+    transition: none;
+    -webkit-text-stroke: 1px black;
+}
+.highlight{
+    background-color: gray;
+    color: white;
+}
+.highlight:hover{
+    background-color: transparent;
+    color: black;
+    transition: none;
+    -webkit-text-stroke: 1px black;
+}
+.type1:hover{
+    background-color: pink;
+}
+.type2:hover{
+    background-color: yellowgreen;
+}
+.comment{
+    margin: 80px 0;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+
+}
+.top {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.1em;
+    font-weight: 300;
+    font-size: clamp(20px, 3vw, 40px);
+    text-align: center;
+    margin: 100px 0 60px;
+    padding-left: 1.2em;
+}
+
+/* about */
+#about {
+    display: flex;
+    align-items: center;    /* 이미지와 글의 세로 중앙 정렬 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    gap: 60px;              /* 이미지와 글 사이 간격 */
+    margin: 80px auto;      /* 상하 여백 */
+    max-width: 1100px;      /* 전체 섹션 최대 너비 */
+    padding: 0 20px;
+}
+
+.profilepicture {
+    flex: 0 0 300px;        /* 이미지가 줄어들거나 커지지 않게 400px로 고정 */
+    width: 300px;           /* 너비 명시 */
+    height: auto;           /* 높이는 비율에 맞게 */
+    border-radius: 12px;    /* 모서리 곡선 */
+    object-fit: cover;      /* 이미지 비율 유지하며 채우기 */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* 은은한 그림자 */
+}
+
+/* 오른쪽 텍스트 영역 */
+.introduction {
+    flex: 1;                /* 남은 공간을 모두 차지 */
+}
+
+.about-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+}
+
+.description {
+    font-family: 'Noto Sans KR', sans-serif; /* 쉼표 추가함 */
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 35px;
+    max-width: 1000px;
+}
+
+/* 정보 리스트 스타일 */
+.info-list {
+    margin-bottom: 35px;
+}
+
+.info-item {
+    display: flex;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    width: 110px;           /* 라벨 너비 고정으로 깔끔하게 정렬 */
+    color: #333;
+}
+
+.value {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #666;
+}
+
+
+.download-btn {
+    display: inline-block;
+    background-color: gray;
+    color: white !important; /* 글자색 강제 고정 */
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-right: 17px;
+}
+
+.download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.introduction>h2{
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.introduction>a{
+    font-family: 'Montserrat', sans-serif;
+}
+.introduction>p{
+    font-family: 'Noto Sans KR' sans-serif;
+    font-weight: 350;
+
+}
+/* #heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+#heading::before,
+#heading::after{
+    content:'';
+    width: 70px;
+    height: 3px;
+    background-color: black;
+}
+#heading::before{
+    margin-right: 30px;
+}
+#heading::after{
+    margin-left: 30px;
+} */
+
+#contact{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+
+}
+#contact::before,
+#contact::after{
+    /* display: inline-block; */
+    content:'';
+    width: 70px;
+    height: 3px;
+    background-color: black;
+}
+#contact::before{
+    margin-right: 30px;
+}
+#contact::after{
+    margin-left: 30px;
+}
+.links>a{
+     font-family: 'Montserrat', sans-serif;
+     font-size: 30px;
+     font-weight: 400;
+     margin-left: 10px;
+}
+
+.certificate>p{
+    font-family: 'Noto Sans KR' sans-serif;
+    font-weight: 350;
+    margin-left: 100px;
+}
+#project{
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 100px;
+    padding: 10px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.blog{
+    font-family: 'Montserrat', sans-serif;
+    margin: 30px 100px;
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.blog h1{
+    font-size: 45px;
+}
+.simple-projects h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  border-left: 4px solid #000;
+  padding-left: 15px;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-color: gray;
+  
+}
+
+/* 마우스를 올렸을 때 살짝 뜨는 효과 */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+
+}
+
+.img-box {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #f0f0f0; /* 이미지가 없을 때 회색 배경 */
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info {
+  padding: 20px;
+}
+
+.info h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.info p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.view-link {
+  font-size: 14px;
+  font-weight: bold;
+  color: #0070f3;
+}
+.circle{
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#education {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.edu-title h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.edu-item {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid black; /* 회색 구분선 */
+    font-size: 20px;
+}
+
+/* 마지막 항목은 구분선 제거 */
+.edu-item:last-child {
+    border-bottom: none;
+}
+
+/* 아이콘 스타일 */
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+
+/* 텍스트 정보 스타일 */
+.edu-info {
+    flex: 1;
+    font-size: 20px;
+}
+
+.edu-date {
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 8px;
+    
+}
+
+.edu-info h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color: #000;
+}
+
+.edu-info h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.edu-info p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #666; /* 이미지처럼 흐린 회색 */
+    max-width: 800px;
+}
+
+.footer{
+    background-color: gray;
+    height: 300px;
+}
+/* 섹션 전체 정렬 */
+#skills-section {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+/* 기술 스택 컨테이너: 중앙으로 모으기 */
+.skill-container {
+    max-width: 900px;      /* 기존 1100px에서 900px로 변경 (#project와 동일하게) */
+    margin: 0 auto;        /* 가로 중앙 정렬 */
+    padding: 0 20px;       /* 좌우 여백 */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.skill-category {
+    width: 100%;           /* 전체 너비 사용 */
+    margin-bottom: 50px;
+}
+
+.skill-type {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 25px;
+    margin-left: 0;       /* 왼쪽 여백 제거하여 Project 제목과 수직 정렬 */
+    color: #000;
+}
+/* 그리드 정렬 */
+.skill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;            /* 박스 사이 간격 */
+}
+
+/* 아이콘 박스 스타일 상세 조절 */
+.skill-box {
+    width: 90px;          /* 이미지처럼 적당한 크기로 고정 */
+    height: 90px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    transition: transform 0.2s;
+}
+
+
+/* 폰트어썸 아이콘 크기 */
+.skill-box i {
+    font-size: 32px;      /* 이미지 비율에 맞게 조절 */
+}
+
+/* 아이콘 아래 텍스트 */
+.skill-box p {
+    margin: 0;
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #444;
+}
+a .skill-box {
+    border: 1px solid rgba(0, 174, 239, 0.25);
+    box-shadow: 0 0 8px blue;
+    transition: 0.3s ease;
+}
+a .skill-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 8px blue;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
