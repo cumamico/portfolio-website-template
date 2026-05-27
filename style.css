@@ -326,12 +326,13 @@ a{
 
 .info h3 {
   margin: 0 0 10px 0;
+  color : #666;
   font-size: 18px;
 }
 
 .info p {
-  font-size: 14px;
-  color: #666;
+  font-size: 15px;
+  color: #333;
   margin-bottom: 15px;
 }
 
